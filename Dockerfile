@@ -28,7 +28,7 @@ ENV ECTO_IPV6 true
 ENV ERL_AFLAGS "-proto_dist inet6_tcp"
 WORKDIR "/app"
 RUN apt-get update -y &&\
-  apt get upgrade &&\
+  apt-get upgrade -y &&\
   apt-get install -y libstdc++6 openssl libncurses5 locales &&\
   apt-get clean &&\
   rm -f /var/lib/apt/lists/*_* &&\
