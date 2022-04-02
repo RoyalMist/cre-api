@@ -1,0 +1,1 @@
+call "%~dp0\cre_api" eval CreApi.Release.migrate
